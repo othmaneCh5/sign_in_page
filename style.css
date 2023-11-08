@@ -1,0 +1,120 @@
+body{
+    overflow: hidden;
+   margin: 0%;
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: myfont;
+    src: url('assets/EduTASBeginner-VariableFont_wght.ttf');
+}
+
+#general_container{
+    width: 1843px;
+    height: 970px;
+    display: grid;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(7,1fr);
+}
+#container{
+    grid-area: 2/3/7/11;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#sign_in{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#logo{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    left: 15px; top: 10px;
+}
+#title{
+    font-size: 35px;
+    font-family: myfont;
+    position: relative;
+    left: 100px; bottom: 90px;
+}
+#text{
+    font-size: 80px;
+    font-weight: 800;
+   
+    position: relative;
+    left: 110px; bottom: 70px;
+}
+form{
+    position: relative;
+    top: -80px; left: 80px;
+}
+input{
+    height: 35px;
+    width: 450px;
+    border-radius: 15px;
+}
+input:invalid{
+    border: 3px solid red;
+}
+input:valid{
+    border: 3px solid green;
+}
+#email{
+    position: relative;
+    left: -70px;
+}
+#password{
+    position: relative;
+    top: 30px; left: -70px;
+}
+#sign_in_button{
+    font-size: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    background-color: orange;
+    position: relative;
+    top: 60px; left: 60px;
+}
+#sign_up{
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+#sign_up_image{
+    position: absolute;
+    width: 737px;
+    height: 695px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.signup_message{
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+#head{
+    font-size: 90px;
+    position: relative;
+    left: 20px;
+}
+#bot{
+    position: relative;
+    left: 30px;
+}
+#sign_up_button{
+    font-size: 35px;
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    color: black;
+    background-color: white;
+}
